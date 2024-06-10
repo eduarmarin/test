@@ -5,6 +5,14 @@ function capitalizeFirstLetter(string) {
 }
 console.log(capitalizeFirstLetter("hello"))
 
-export {capitalizeFirstLetter}
+//A reverseString function that takes a string and returns it reversed.
+function reverse(s){
+    return s.split("").reverse().join("");
+}
+
+console.log(reverse('Hello'))
+
+
+export {capitalizeFirstLetter, reverse}
 //module.exports = capitalizeFirstLetter()
    
