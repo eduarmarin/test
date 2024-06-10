@@ -15,11 +15,13 @@ const calculator = {
       let div = num1 / num2;
       return div
     },
-  };   
+};   
 
-       calculator.sumValues(25, 4);
-       calculator.sumValues(45, 4);
-       calculator.subtractionValues(20, 5);
-       calculator.multiplyValues(5, 6);
-       calculator.divisionValues(45, 5);
-       console.log(calculator.sumValues(25, 4));
+console.log(
+  " sum: " + calculator.sumValues(25, 4) +
+  " sub: " + calculator.subtractionValues(25, 5) +
+  " mul: " + calculator.multiplyValues(25, 4) +
+  " div: " + calculator.divisionValues(25, 5)
+);
+
+//export {calculator}
