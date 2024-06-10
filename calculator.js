@@ -24,4 +24,4 @@ console.log(
   " div: " + calculator.divisionValues(25, 5)
 );
 
-//export {calculator}
+export {calculator}
