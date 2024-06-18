@@ -1,10 +1,9 @@
+
 function caesarCipher(str, shift) {
     var output = "";
-
     // Loop through each character in the input string
     for (var i = 0; i < str.length; i++) {
       var ascii = str[i].charCodeAt();
-
       // Check if the character is a letter
       if ((ascii >= 65 && ascii <= 90) || (ascii >= 97 && ascii <= 122)) {
         // Shift the letter by the shift amount, wrapping around the alphabet if necessary
@@ -13,14 +12,12 @@ function caesarCipher(str, shift) {
           ascii -= 26;
         }
       }
-
       // Add the new character to the output string
       output += String.fromCharCode(ascii);
     }
-
     // Return the output string
     return output;
   }
   console.log(caesarCipher("Hello, World!", 3));
 
-  //export {caesarCipher}
+  export {caesarCipher}
